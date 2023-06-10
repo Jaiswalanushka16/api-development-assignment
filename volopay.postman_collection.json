@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "a5541095-49ad-42c4-8962-ca7abb4d3a16",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20006049"
+	},
+	"item": [
+		{
+			"name": "total_items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/total_items?start_date=2022-11-18&end_date=2023-04-23&department=Tech",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"total_items"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2022-11-18"
+						},
+						{
+							"key": "end_date",
+							"value": "2023-04-23"
+						},
+						{
+							"key": "department",
+							"value": "Tech"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nth_most_total_item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/nth_most_total_item?start_date=2010-11-18&end_date=2025-04-23&item_by=quantity&n=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"nth_most_total_item"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2010-11-18"
+						},
+						{
+							"key": "end_date",
+							"value": "2025-04-23"
+						},
+						{
+							"key": "item_by",
+							"value": "quantity"
+						},
+						{
+							"key": "n",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "percentage_of_department_wise_sold_items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/percentage_of_department_wise_sold_items?start_date=2010-11-18&end_date=2025-04-23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"percentage_of_department_wise_sold_items"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2010-11-18"
+						},
+						{
+							"key": "end_date",
+							"value": "2025-04-23"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "monthly_sales",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/monthly_sales?product=Google&year=2023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"monthly_sales"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "Google"
+						},
+						{
+							"key": "year",
+							"value": "2023"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
