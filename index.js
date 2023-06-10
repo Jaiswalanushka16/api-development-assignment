@@ -91,7 +91,7 @@ app.get("/api/nth_most_total_item", async (req, res) => {
   );
   // Retrieve the nth most sold item
   const nthItem = sortedItems[n - 1];
-  console.log(nthItem);
+  // console.log(nthItem);
   //   return nthItem ? nthItem.name : null;
   res.json(nthItem ? nthItem.software : null);
 });
