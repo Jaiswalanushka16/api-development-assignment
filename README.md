@@ -26,7 +26,7 @@ Make sure you have the following software installed on your machine:
 1. Clone the repository or download the source code:
 
    ```shell
-   git clone https://github.com/Jaiswalanushka16/api-development-assignment#api-usage
+   git clone https://github.com/Jaiswalanushka16/api-development-assignment
    ```
 
 2. Navigate to the project directory:
