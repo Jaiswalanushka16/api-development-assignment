@@ -9,8 +9,9 @@ This project implements a set of APIs for analyzing software purchase data. The 
   - [Installation](#installation)
   - [Running the Server](#running-the-server)
 - [API Endpoints](#api-endpoints)
-- [API Usage](#api-usage)
+- [API Reference](#api-reference)
 - [Technology Stack](#technology-stack)
+- [License](#license)
 
 ## Getting Started
 
@@ -25,7 +26,7 @@ Make sure you have the following software installed on your machine:
 1. Clone the repository or download the source code:
 
    ```shell
-   git clone https://github.com/Jaiswalanushka16/api-development-assignment
+   git clone <repository-url>
    ```
 
 2. Navigate to the project directory:
@@ -62,11 +63,54 @@ The following API endpoints are available:
 
 - `GET /api/monthly_sales`: Retrieves the monthly sales for a specific product.
 
-## API Usage
+## API Reference
 
-Make HTTP requests to the above endpoints using tools like Postman or any other API testing tool.
+#### Get all items
 
-Ensure you provide the required parameters and format the request accordingly.
+```http
+  GET /api/total_items
+```
+
+| Parameter    | Type     | Description                        |
+| :----------- | :------- | :--------------------------------- |
+| `start_date` | `date`   | **Required**. Start Date of search |
+| `end_date`   | `date`   | **Required**. End Date of search   |
+| `department` | `string` | **Required**. Department to filter |
+
+#### Get all items
+
+```http
+  GET /api/nth_most_total_item
+```
+
+| Parameter    | Type      | Description                                     |
+| :----------- | :-------- | :---------------------------------------------- |
+| `item_by`    | `string`  | **Required**. Order factor ( quantity or price) |
+| `start_date` | `date`    | **Required**. Start Date of search              |
+| `end_date`   | `date`    | **Required**. End Date of search                |
+| `n`          | `integer` | **Required**. n th most sold item               |
+
+#### Get all items
+
+```http
+  GET /api/percentage_of_department_wise_sold_items
+```
+
+| Parameter    | Type   | Description                        |
+| :----------- | :----- | :--------------------------------- |
+| `start_date` | `date` | **Required**. Start Date of search |
+| `end_date`   | `date` | **Required**. End Date of search   |
+
+#### Get all items
+
+```http
+  GET /api/monthly_sales
+```
+
+| Parameter | Type     | Description                         |
+| :-------- | :------- | :---------------------------------- |
+| `product` | `string` | **Required**. Product to be queried |
+| `year`    | `number` | **Required**. Year for sales report |
 
 ## Technology Stack
 
